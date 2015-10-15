@@ -7,16 +7,27 @@
 //
 
 #import "ViewController.h"
+#import "AudioBarGraphWaveView.h"
 
 @interface ViewController ()
-
+{
+    AudioBarGraphWaveView* _soundWaveView;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    _soundWaveView = [[AudioBarGraphWaveView alloc] initWithFrame:CGRectMake(0, 50, self.view.bounds.size.width, 55)];
+    _soundWaveView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:_soundWaveView];
+    NSString* filename = [NSString stringWithFormat:@"1.mp4"];
+    
+    NSURL* url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:filename ofType:nil]];
+    
+    _soundWaveView.soundURL = url;
 }
 
 - (void)didReceiveMemoryWarning {

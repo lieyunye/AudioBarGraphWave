@@ -15,6 +15,9 @@
 		FC3970761BCF8AD9008DD586 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3970741BCF8AD9008DD586 /* LaunchScreen.storyboard */; };
 		FC3970811BCF8AD9008DD586 /* audioBarGraphWaveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3970801BCF8AD9008DD586 /* audioBarGraphWaveTests.m */; };
 		FC39708C1BCF8AD9008DD586 /* audioBarGraphWaveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC39708B1BCF8AD9008DD586 /* audioBarGraphWaveUITests.m */; };
+		FC39709B1BCF8B18008DD586 /* AudioBarGraphWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC39709A1BCF8B18008DD586 /* AudioBarGraphWaveView.m */; settings = {ASSET_TAGS = (); }; };
+		FC39709E1BCF8BDA008DD586 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = FC39709D1BCF8BDA008DD586 /* UIView+Geometry.m */; settings = {ASSET_TAGS = (); }; };
+		FC3970A01BCF8D0D008DD586 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FC39709F1BCF8D0D008DD586 /* 1.mp4 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		FC3970871BCF8AD9008DD586 /* audioBarGraphWaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audioBarGraphWaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC39708B1BCF8AD9008DD586 /* audioBarGraphWaveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = audioBarGraphWaveUITests.m; sourceTree = "<group>"; };
 		FC39708D1BCF8AD9008DD586 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3970991BCF8B18008DD586 /* AudioBarGraphWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioBarGraphWaveView.h; sourceTree = "<group>"; };
+		FC39709A1BCF8B18008DD586 /* AudioBarGraphWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioBarGraphWaveView.m; sourceTree = "<group>"; };
+		FC39709C1BCF8BDA008DD586 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
+		FC39709D1BCF8BDA008DD586 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
+		FC39709F1BCF8D0D008DD586 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +109,20 @@
 		FC3970651BCF8AD9008DD586 /* audioBarGraphWave */ = {
 			isa = PBXGroup;
 			children = (
+				FC39709C1BCF8BDA008DD586 /* UIView+Geometry.h */,
+				FC39709D1BCF8BDA008DD586 /* UIView+Geometry.m */,
 				FC3970691BCF8AD9008DD586 /* AppDelegate.h */,
 				FC39706A1BCF8AD9008DD586 /* AppDelegate.m */,
 				FC39706C1BCF8AD9008DD586 /* ViewController.h */,
 				FC39706D1BCF8AD9008DD586 /* ViewController.m */,
+				FC39709F1BCF8D0D008DD586 /* 1.mp4 */,
 				FC39706F1BCF8AD9008DD586 /* Main.storyboard */,
 				FC3970721BCF8AD9008DD586 /* Assets.xcassets */,
 				FC3970741BCF8AD9008DD586 /* LaunchScreen.storyboard */,
 				FC3970771BCF8AD9008DD586 /* Info.plist */,
 				FC3970661BCF8AD9008DD586 /* Supporting Files */,
+				FC3970991BCF8B18008DD586 /* AudioBarGraphWaveView.h */,
+				FC39709A1BCF8B18008DD586 /* AudioBarGraphWaveView.m */,
 			);
 			path = audioBarGraphWave;
 			sourceTree = "<group>";
@@ -244,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3970761BCF8AD9008DD586 /* LaunchScreen.storyboard in Resources */,
+				FC3970A01BCF8D0D008DD586 /* 1.mp4 in Resources */,
 				FC3970731BCF8AD9008DD586 /* Assets.xcassets in Resources */,
 				FC3970711BCF8AD9008DD586 /* Main.storyboard in Resources */,
 			);
@@ -270,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC39709E1BCF8BDA008DD586 /* UIView+Geometry.m in Sources */,
 				FC39706E1BCF8AD9008DD586 /* ViewController.m in Sources */,
+				FC39709B1BCF8B18008DD586 /* AudioBarGraphWaveView.m in Sources */,
 				FC39706B1BCF8AD9008DD586 /* AppDelegate.m in Sources */,
 				FC3970681BCF8AD9008DD586 /* main.m in Sources */,
 			);
